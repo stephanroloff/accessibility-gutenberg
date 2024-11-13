@@ -1,1 +1,1 @@
-# accessibility-gutenberg
+# Accessibility Plugin for Gutenberg Blocks
