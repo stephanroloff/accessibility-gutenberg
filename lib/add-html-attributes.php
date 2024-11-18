@@ -15,6 +15,9 @@ function add_html_attr( $block_content, $block ) {
          if(isset($block['attrs']['role'])){
             $processor->set_attribute( 'role', $block['attrs']['role'] );
          }
+         if(isset($block['attrs']['tabindex'])){
+            $processor->set_attribute( 'tabindex', $block['attrs']['tabindex'] );
+         }
          // $processor->add_class( 'example-class' );
       }  
       return $processor->get_updated_html();
