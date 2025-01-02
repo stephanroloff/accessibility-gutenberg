@@ -1,7 +1,7 @@
 <?php
 //Paso 3
 // Add HTML attribute on the server side (PHP)
-function add_html_attr( $block_content, $block ) {
+function add_html_attr_accessibility( $block_content, $block ) {
    if ( 'core/button' === $block['blockName'] || 
    'core/group' === $block['blockName'] ||
    'core/paragraph' === $block['blockName'] 
@@ -25,4 +25,4 @@ function add_html_attr( $block_content, $block ) {
    return $block_content;
 }
 
-add_filter( 'render_block', 'add_html_attr', 10, 2 );
+add_filter( 'render_block', 'add_html_attr_accessibility', 10, 2 );

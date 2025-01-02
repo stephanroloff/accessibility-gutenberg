@@ -6,7 +6,7 @@ const { PanelBody, TextControl, SelectControl } = wp.components;
 import { __experimentalNumberControl as NumberControl } from '@wordpress/components';
 import {optionsRole} from './listOptionsAriaRole';
 
-const withMyPluginControls = createHigherOrderComponent( ( BlockEdit ) => {
+const accessibilityPluginControls = createHigherOrderComponent( ( BlockEdit ) => {
     return ( props ) => {
         const { name, attributes, setAttributes } = props;
 
@@ -51,10 +51,10 @@ const withMyPluginControls = createHigherOrderComponent( ( BlockEdit ) => {
             </>
         );
     };
-}, 'withMyPluginControls' );
+}, 'accessibilityPluginControls' );
 
 wp.hooks.addFilter(
     'editor.BlockEdit',
     'accessibility-plugin/with-inspector-controls',
-    withMyPluginControls
+    accessibilityPluginControls
 );
