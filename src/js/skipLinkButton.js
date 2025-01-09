@@ -3,20 +3,27 @@ newLink.className = 'skip-link';
 newLink.textContent = 'Skip link';
 newLink.setAttribute('tabindex', "0")
 
-let mainContentStart = document.querySelector('#main-content');
+let mainContentStart;
+
+// This array should be adapted, cause every website has a different structure.
+//*****************************************************************************
+let selectorsArray = [
+    '#main-content a',
+    '#main-content [tabindex]',
+    '#main-content button',
+    '.entry-content a',
+    'select'
+];
+//*****************************************************************************
+
+
+selectorsArray.forEach(selector =>{
+    if(!mainContentStart){
+        mainContentStart = document.querySelector(selector)
+    }
+})
 
 if(mainContentStart){
-    if(!mainContentStart.hasAttribute('tabindex') || element.tagName !== 'BUTTON' || element.tagName !== 'A'){
-        mainContentStart = document.querySelector('#main-content a');
-       
-        if(!mainContentStart){
-            mainContentStart = document.querySelector('#main-content [tabindex]');
-
-            if(!mainContentStart){
-                mainContentStart = document.querySelector('#main-content button');
-            }
-        }
-    }
     newLink.addEventListener('keydown', (event)=>{
         if (event.key === 'Enter') { 
             mainContentStart.focus();
@@ -25,6 +32,11 @@ if(mainContentStart){
 } 
 
 document.body.prepend(newLink);
+
+
+
+
+
 
 
 
