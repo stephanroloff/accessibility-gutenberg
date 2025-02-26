@@ -1,6 +1,6 @@
 # Accessibility Plugin for Gutenberg Blocks
 
-<img src="./accessibility-img.jpg" alt="accessibility" width="300">
+<img src="./src/media/accessibility-img.jpg" alt="accessibility" width="300">
 
 Installation:
 
@@ -11,4 +11,4 @@ Step 2:
 `npm run build`
 
 Step 3:  
-That's it!
+That's it! 🚀
