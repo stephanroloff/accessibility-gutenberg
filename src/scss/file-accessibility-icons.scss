@@ -1,0 +1,29 @@
+.wp-block-file{
+    &.is-style-download-icon{
+        display: flex;
+        margin: 0 !important;
+        a:first-child{
+            display: none;
+        }
+        .wp-block-file__button{
+            display: flex;
+            align-items: center;
+            &::after{
+                content: "";
+                mask-image: url('./media/download-icon.svg');
+                -webkit-mask-image: url('./media/download-icon.svg');
+                background-color: currentColor; 
+                display: inline-block;
+                width: 22px;
+                height: 22px;
+                position: relative;
+                top: 0px;
+                margin-left: 3px;
+                margin-right: 5px;   
+            }
+        }
+        .wp-block-file__button-richtext-wrapper{
+            margin: 0 !important;
+        }
+    }
+}

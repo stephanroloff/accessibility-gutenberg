@@ -29,5 +29,13 @@ function accessibility_plugin_register_block_styles() {
             'is_default'   => false,
         )
     ); 
+    register_block_style(
+        'core/file',
+        array(
+            'name'         => 'download-icon',
+            'label'        => __( 'Download Icon', 'textdomain' ),
+            'is_default'   => false,
+        )
+    );
 }
 add_action( 'init', 'accessibility_plugin_register_block_styles' );
