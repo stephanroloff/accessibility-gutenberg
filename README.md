@@ -4,6 +4,11 @@
 
 Installation:
 
-1-npm install  
-2-npm run build  
-3-That's it!
+Step 1:  
+`npm install`
+
+Step 2:  
+`npm run build`
+
+Step 3:  
+That's it!
