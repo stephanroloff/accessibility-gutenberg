@@ -1,0 +1,19 @@
+p{
+    a[target="_blank"]{
+        // color: black;
+        &::after{
+            // content: url('./media/download-icon.svg');
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            position: relative;
+            top: 1px;
+            margin-left: 3px;
+            margin-right: 5px;
+            background-color: currentColor; 
+            mask-image: url('./media/new-tab-icon.svg');
+            -webkit-mask-image: url('./media/new-tab-icon.svg');
+        }
+    }
+}

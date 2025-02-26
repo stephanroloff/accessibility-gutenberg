@@ -25,3 +25,4 @@ define('MY_PLUGIN_PATH_ACCESSIBILITY',plugin_dir_url(__FILE__));
 
 require_once(__DIR__ . '/lib/add-html-attributes.php');  
 require_once(__DIR__ . '/lib/enqueue-assets.php');  
+require_once(__DIR__ . '/lib/extra-buttons.php');  

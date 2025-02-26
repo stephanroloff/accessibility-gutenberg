@@ -1,0 +1,60 @@
+.wp-block-button{
+    & a[target="_blank"],
+    &.is-style-button-new-tab a[target="_blank"],
+    &.is-style-button-new-tab .wp-block-button__link{
+        // background-color: black;
+        &::after{
+            content: "";
+            mask-image: url('./media/new-tab-icon.svg');
+            -webkit-mask-image: url('./media/new-tab-icon.svg');
+            background-color: currentColor; 
+            display: inline-block;
+            width: 22px;
+            height: 22px;
+            position: relative;
+            top: 2px;
+            margin-left: 3px;
+            margin-right: 5px;   
+        }
+    }
+
+    &.is-style-button-download{
+        a,
+        .wp-block-button__link{
+            // background-color: black;
+            &::after{
+                content: "";
+                mask-image: url('./media/download-icon.svg');
+                -webkit-mask-image: url('./media/download-icon.svg');
+                background-color: currentColor; 
+                display: inline-block;
+                width: 22px;
+                height: 22px;
+                position: relative;
+                top: 2px;
+                margin-left: 3px;
+                margin-right: 5px;   
+            }
+        }
+    }
+
+    &.is-style-button-pdf{
+        a,
+        .wp-block-button__link{
+            // background-color: black;
+            &::after{
+                content: "";
+                mask-image: url('./media/pdf-icon.svg');
+                -webkit-mask-image: url('./media/pdf-icon.svg');
+                background-color: currentColor; 
+                display: inline-block;
+                width: 22px;
+                height: 22px;
+                position: relative;
+                top: 2px;
+                margin-left: 3px;
+                margin-right: 5px;   
+            }
+        }
+    }
+}
