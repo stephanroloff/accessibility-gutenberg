@@ -1,5 +1,7 @@
 # Accessibility Plugin for Gutenberg Blocks
 
+![Accessibility](./accessibility-img.jpg)
+
 Installation:
 
 1-npm install  
