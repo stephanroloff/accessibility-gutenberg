@@ -1,6 +1,6 @@
 # Accessibility Plugin for Gutenberg Blocks
 
-![Accessibility](./accessibility-img.jpg)
+<img src="./accessibility-img.jpg" alt="accessibility" width="300">
 
 Installation:
 
